@@ -1,7 +1,7 @@
 echo off
 cls
 
-if not exist "C:\Users\%USERNAME%\Documents\Realm\flashplayer18_sa.exe" ( start "" https://cdn.discordapp.com/attachments/410511142696517633/464721079823237120/flashplayer18_sa.exe 
+if not exist "C:\Users\%USERNAME%\Documents\Realm\flashplayer18_sa.exe" ( start "" https://github.com/TheNorthJyde/RotMG-flash-installer/blob/master/flashplayer18_sa.exe?raw=true 
 echo press enter when download is done
 pause
 ) 
@@ -28,3 +28,5 @@ echo oLink.Save >> %SCRIPT%
 
 cscript /nologo %SCRIPT%
 del %SCRIPT%
+
+start /b "" cmd /c del "%~f0"&exit /b
